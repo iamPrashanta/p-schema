@@ -1,9 +1,24 @@
 {
   "name": "p-schema",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple, rule-based request validator for Express.js, built on top of `express-validator`.",
+  "keywords": [],
+  "homepage": "https://github.com/iamPrashanta/p-schema#readme",
+  "bugs": {
+    "url": "https://github.com/iamPrashanta/p-schema/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamPrashanta/p-schema.git"
+  },
+  "license": "ISC",
+  "author": "Prashanta M.",
+  "type": "commonjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
   "files": [
     "dist"
   ],
@@ -12,21 +27,6 @@
     "test": "ts-node test/validation.test.ts",
     "prepublishOnly": "npm run build"
   },
-  "peerDependencies": {
-    "express": "^4.17.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamPrashanta/p-schema.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/iamPrashanta/p-schema/issues"
-  },
-  "homepage": "https://github.com/iamPrashanta/p-schema#readme",
   "dependencies": {
     "express-validator": "^7.0.0"
   },
@@ -35,5 +35,8 @@
     "@types/node": "^25.2.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "express": "^4.17.1"
   }
 }
